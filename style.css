@@ -13,6 +13,7 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-light-grey2: #9C948E;
   --color-black: #000000;
 
   /* Font size */
@@ -30,7 +31,7 @@
   /* Size */
   --size-border-radius: 4px;
 
-  /* Annimation */
+  /* Animation */
   --animation-duration: 300ms;
 }
 
@@ -95,11 +96,18 @@ p {
 
 /* Navbar */
 #navbar {
+  position : fixed;
+  width : 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: var(--color-grey);
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-light-grey2);
 }
 
 .navbar__logo {
@@ -142,6 +150,7 @@ p {
 #home {
   background: url('imgs/home-background2.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
