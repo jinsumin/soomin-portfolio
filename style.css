@@ -177,14 +177,50 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-/* Section common */
+/* About */
+.about {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Skills */
+.skills {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.skills__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Work */
+.work {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.work__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section */
 .section {
   padding: 50px;
   text-align: center;
   margin: auto;
 }
 
-.section__container {
+.sect__container {
   max-width: 1200px;
   margin: auto;
 }
