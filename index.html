@@ -1,305 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOOMIN's Portfolio</title>
-    <meta name="description" content="Portfolio for programmer SOOMIN" />
-    <meta name="author" content="SOOMIN" />
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <script src="https://kit.fontawesome.com/72f7bcac31.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+<div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<!-- End #mobile-menu-toggle -->
+<header>
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <ul id="menu" class="shadow">
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#experience">Experience</a>
+        </li>
+        <li>
+            <a href="#education">Education</a>
+        </li>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</header>
+<!-- End header -->
 
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fab fa-dev"></i>
-            <a href="#"> SOOMIN</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">Work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
-        <!-- Toggle button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
+<div id="lead">
+    <div id="lead-content">
+        <h1>Ryan Fitzgerald</h1>
+        <h2>Software Engineer</h2>
+        <a href="#" class="btn-rounded-white">Download Resume</a>
+    </div>
+    <!-- End #lead-content -->
 
-    <!-- Home -->
-    <section id="home">
-        <div class="home__container">
-            <img src="imgs/profile.jpg" alt="SOOMIN's profile photo" class="home__avatar">
-            <h1 class="home__title">Soomin Jin <br />Portfolio</h1>
-            <h2 class="home__description">return development * future;</h2>
-            <button class="home__contact">Contact Me</button>
-        </div>
-    </section>
+    <div id="lead-overlay"></div>
 
-    <!-- About -->
-    <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <p>Hello. I am preparing to become a developer in both fields of App and Web. I have experience
-            working on
-            various projects and have passion for creation and spirit of challenge.
-        </p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="major__title">Front-end</div>
-                <div class="major__description">
-                    HTML, CSS, JavaScript, TypeScript,
-                    <br />React, Web APIs
-                </div>
+    <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+    </div>
+    <!-- End #lead-down -->
+</div>
+<!-- End #lead -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">About Me</h2>
             </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-server"></i>
-                </div>
-                <div class="major__title">Back-end</div>
-                <div class="major__description">
-                    Java, Spring, NodeJS
-                    <br />Rest APIs
-                </div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-mobile"></i>
-                </div>
-                <div class="major__title">Mobile</div>
-                <div class="major__description">
-                    Android, React Native,
-                    <br />Java, Kotlin
-                </div>
-            </div>
-        </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="imgs/jobs/inha-univ-logo.jpg" alt="inha-univ-logo" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">
-                        Graduated from Inha University, Department of Information and Communication Engineering
-                    </p>
-                    <p class="job__period">
-                        2012 Mar - 2019 Aug
-                    </p>
-                </div>
-            </div>
-            <div class="job">
-                <img src="imgs/jobs/seoul.png" alt="seoul-logo" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">
-                        Worked as an intern at Seoul City Hall Finance Department
-                    </p>
-                    <p class="job__period">
-                        2020 Sep - 2020 Dec
-                    </p>
-                </div>
+            <div class="col-md-8">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
+                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+                    libero. Morbi dapibus porta quam laoreet placerat. Donec
+                    eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et
+                    tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus
+                    pharetra. Vivamus nunc justo, finibus
+                    ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In
+                    consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                </p>
             </div>
         </div>
+    </div>
+</div>
+<!-- End #about -->
 
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
+<div id="experience" class="background-alt">
+    <h2 class="heading">Experience</h2>
+    <div id="experience-timeline">
+        <div data-date="September 2015 – September 2016">
+            <h3>Employer Name</h3>
+            <h4>Job Title</h4>
             <p>
-                I have experience with various team projects and have knowledge of the entire software lifecycle. I can
-                adapt and work
-                well in a team environment. I am well-planned and punctual.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
+                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
+                dapibus porta quam laoreet placerat.
             </p>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>C, C++</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JAVA</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML, CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript, TypeScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>React</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>NodeJS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 70%;"></div>
-                        </div>
-                    </div>
+        </div>
+
+        <div data-date="September 2015 – September 2016">
+            <h3>Employer Name</h3>
+            <h4>Job Title</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
+                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
+                dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+
+        <div data-date="September 2015 – September 2016">
+            <h3>Employer Name</h3>
+            <h4>Job Title</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
+                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
+                dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- End #experience -->
+
+<div id="education">
+    <h2 class="heading">Education</h2>
+    <div class="education-block">
+        <h3>University of Ottawa</h3>
+        <span class="education-date">Sept 2016 - Sept 2017</span>
+        <h4>Bachelor of Science in Computer Science</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
+            urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
+            dapibus porta quam laoreet placerat.
+        </p>
+    </div>
+    <!-- End .education-block -->
+
+    <div class="education-block">
+        <h3>University of Ottawa</h3>
+        <span class="education-date">Sept 2016 - Sept 2017</span>
+        <h4>Bachelor of Science in Computer Science</h4>
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+        </ul>
+    </div>
+    <!-- End .education-block -->
+</div>
+<!-- End #education -->
+
+<div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <div class="row">
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/project.jpg"/>
                 </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skill__set">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>IntelliJ</span></li>
-                            <li><span>Android Studio</span></li>
-                            <li><span>Eclipse</span></li>
-                            <li><span>Zeplin</span></li>
-                            <li><span>Notion</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git</span></li>
-                            <li><span>Mark Down</span></li>
-                            <li><span>Math</span></li>
-                        </ul>
-                    </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Project Name Here</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
+                        laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget
+                        efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                    <a href="#">View Project</a>
                 </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/project.jpg"/>
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Project Name Here</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
+                        laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget
+                        efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+        </div>
+    </div>
+</div>
+<!-- End #projects -->
+
+<div id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>Go</li>
+        <li>Node.js</li>
+        <li>AngularJs</li>
+        <li>React</li>
+        <li>Elixir</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>C#</li>
+        <li>C++</li>
+        <li>Ruby on Rails</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>Go</li>
+        <li>Node.js</li>
+        <li>AngularJs</li>
+        <li>React</li>
+        <li>Elixir</li>
+        <li>Java</li>
+        <li>C</li>
+        <li>C#</li>
+        <li>C++</li>
+        <li>Ruby on Rails</li>
+    </ul>
+</div>
+<!-- End #skills -->
+
+<div id="contact">
+    <h2>Get in Touch</h2>
+    <div id="contact-form">
+        <form method="POST" action="https://formspree.io/email@email.com">
+            <input type="hidden" name="_subject" value="Contact request from personal website"/>
+            <input type="email" name="_replyto" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <!-- End #contact-form -->
+</div>
+<!-- End #contact -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 copyright">
+                <p>
+                    Copyright &copy; <span id="current-year">2022</span> YOUR NAME
+                </p>
+            </div>
+            <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+            </div>
+            <div class="col-sm-5 social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/" target="_blank"><i class="fa fa-github"
+                                                                         aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"
+                                                                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"
+                                                                           aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
+                                                                               aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
+                                                                              aria-hidden="true"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</footer>
+<!-- End footer -->
 
-    <!-- Work -->
-    <section id="work" class="section">
-        <div class="section__container">
-            <h1>Work</h1>
-            <h3>Projects</h3>
-            <div class="work__categories">
-                <button class="category__btn selected" data-filter="*">All<span
-                        class="category__count">3</span></button>
-                <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">1</span></button>
-                <button class="category__btn" data-filter="web">Web<span class="category__count">1</span></button>
-                <button class="category__btn" data-filter="algorithm">Algorithm<span
-                        class="category__count">1</span></button>
-            </div>
-            <div class="work__projects">
-                <a href="https://github.com/Groupers" class="project" target="blank" data-type="mobile">
-                    <img src="imgs/projects/mobile2.png" alt="project1" width="220" height="220">
-                    <div class="project__description">
-                        <h3>Mobile App</h3>
-                        <span>mobile app team project, coding with React Native</span>
-                    </div>
-                </a>
-                <a href="https://madangcoop.net/메인" class="project" target="blank" data-type="web">
-                    <img src="imgs/projects/web2.png" alt="project2" width="250" height="140">
-                    <div class="project__description">
-                        <h3>Web Site</h3>
-                        <span>madangcoop.net</span>
-                    </div>
-                </a>
-                <a href="https://github.com/jinsumin/Algorithm" class="project" target="blank" data-type="algorithm">
-                    <img src="imgs/projects/algorithm.png" alt="project3" width="250" height="140">
-                    <div class="project__description">
-                        <h3>Algorithm Test Coding</h3>
-                        <span>algorithm, coding with JAVA</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="imgs/testimonial/avatar1.png" alt="People" class="testimonial__avatar" />
-                    <div class="testimonial__speech-bubble">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                            fuga libero nulla eveniet aperiam laborum, quis provident
-                            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
-                            explicabo tempora, dignissimos accusantium inventore ducimus!
-                        </p>
-                        <p class="name"><a href="">avatar1</a> / corp1</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__speech-bubble">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                            fuga libero nulla eveniet aperiam laborum, quis provident
-                            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
-                            explicabo tempora, dignissimos accusantium inventore ducimus!
-                        </p>
-                        <p class="name"><a href="">avatar2</a> / corp2</p>
-                    </div>
-                    <img src="imgs/testimonial/avatar2.png" alt="People" class="testimonial__avatar" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">dev.soomin@kakao.com</h2>
-        <div class="contact__links">
-            <a href="https://github.com/jinsumin" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fa fa-linkedin-square"></i>
-            </a>
-        </div>
-        <p class="contact__rights">2021 Soomin Jin - All rights reserved</p>
-    </section>
-
-    <!-- Arrow up -->
-    <button class="arrow-up">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
